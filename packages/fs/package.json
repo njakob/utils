@@ -1,0 +1,16 @@
+{
+  "name": "@njakob/fs",
+  "version": "0.0.0",
+  "description": "File system utils",
+  "author": "Nicolas Jakob <nicow.jakob@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/njakob/utils",
+  "repository": "https://github.com/njakob/utils/tree/master/packages/fs",
+  "bugs": {
+    "url": "https://github.com/njakob/utils/issues"
+  },
+  "main": "lib/fs.js",
+  "dependencies": {
+    "source-map-support": "^0.4.6"
+  }
+}

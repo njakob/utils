@@ -2,6 +2,26 @@
 # yarn lockfile v1
 
 
+"@njakob/cli-utils@^1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@njakob/cli-utils/-/cli-utils-1.3.1.tgz#89eed760b49c1a79de574b2d7968b6fb106d5975"
+  dependencies:
+    "@njakob/rainbow" "^1.2.1"
+
+"@njakob/hulk@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@njakob/hulk/-/hulk-3.0.0.tgz#15c4343f051e36860aa225690f12c5bd67daef2a"
+
+"@njakob/parcel@^1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@njakob/parcel/-/parcel-1.3.1.tgz#3954c6228e00bcba484f55ede86f66a102a3b128"
+
+"@njakob/rainbow@^1.2.1":
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/@njakob/rainbow/-/rainbow-1.3.2.tgz#f1ddba501f1cb295d3f37aef8c8e65f10dcf7fe9"
+  dependencies:
+    ansi-styles "^3.0.0"
+
 JSONStream@^1.0.4:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/JSONStream/-/JSONStream-1.3.1.tgz#707f761e01dae9e16f1bcf93703b78c70966579a"
@@ -65,6 +85,12 @@ ansi-regex@^2.0.0:
 ansi-styles@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-2.2.1.tgz#b432dd3358b634cf75e1e4664368240533c1ddbe"
+
+ansi-styles@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-3.0.0.tgz#5404e93a544c4fec7f048262977bebfe3155e0c1"
+  dependencies:
+    color-convert "^1.0.0"
 
 anymatch@^1.3.0:
   version "1.3.0"
@@ -994,6 +1020,16 @@ co@^4.6.0:
 code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
+
+color-convert@^1.0.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.9.0.tgz#1accf97dd739b983bf994d56fec8f95853641b7a"
+  dependencies:
+    color-name "^1.1.1"
+
+color-name@^1.1.1:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.2.tgz#5c8ab72b64bd2215d617ae9559ebb148475cf98d"
 
 columnify@^1.5.4:
   version "1.5.4"

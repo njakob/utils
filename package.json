@@ -8,9 +8,13 @@
   "scripts": {
     "lint": "eslint --fix .",
     "flow": "flow check",
-    "bootstrap": "lerna bootstrap --npm-client=yarn"
+    "bootstrap": "lerna bootstrap --npm-client=yarn",
+    "build": "node scripts/build"
   },
   "devDependencies": {
+    "@njakob/cli-utils": "^1.3.1",
+    "@njakob/hulk": "^3.0.0",
+    "@njakob/parcel": "^1.3.1",
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
     "babel-preset-es2015": "^6.24.1",

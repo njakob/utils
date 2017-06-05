@@ -19,3 +19,7 @@ $ yarn add @njakob/fs
 ```js
 
 ```
+
+## Changelog
+
+See [changelog](CHANGELOG.md).

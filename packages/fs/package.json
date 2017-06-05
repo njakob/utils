@@ -13,7 +13,6 @@
   "module": "lib/fs.es.js",
   "jsnext:main": "lib/fs.es.js",
   "dependencies": {
-    "mkdirp": "^0.5.1",
-    "source-map-support": "^0.4.6"
+    "mkdirp": "^0.5.1"
   }
 }

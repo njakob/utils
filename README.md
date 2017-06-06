@@ -8,6 +8,7 @@
 </p>
 
 <p align="center">
+  <a href="https://travis-ci.org/njakob/utils"><img alt="Build Status" src="https://travis-ci.org/njakob/utils.svg?branch=master"></a>
   <a href="https://github.com/njakob/eslint-config"><img alt="ESLint Config" src="https://img.shields.io/badge/eslint_config-njakob-463fd4.svg"></a>
   <a href="https://conventionalcommits.org"><img alt="Conventional Commits" src="https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg"></a>
 </p>

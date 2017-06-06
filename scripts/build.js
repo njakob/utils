@@ -3,6 +3,7 @@ const bundle = require('./bundle');
 const findPackages = require('./findPackages');
 const readPackage = require('./readPackage');
 const getDependencies = require('./getDependencies');
+const generateFlowDefinitions = require('./generateFlowDefinitions');
 
 const reporter = new cliUtils.ConsoleReporter();
 
@@ -13,12 +14,15 @@ async function build() {
 
   const buildActivity = reporter.activity(reporter.parse`Bundle ${packagesPaths.length} package${packagesPaths.length > 0 ? 's' : ''}`);
 
-  await Promise.all(packagesPaths.map(async (packagePath) => {
-    const pkg = readPackage(packagePath);
-    return bundle(packagePath, pkg, getDependencies(pkg));
-  }));
-
-  buildActivity.complete();
+  try {
+    await Promise.all(packagesPaths.map(async (packagePath) => {
+      const pkg = readPackage(packagePath);
+      await bundle(packagePath, pkg, getDependencies(pkg));
+      await generateFlowDefinitions(packagePath, pkg);
+    }));
+  } finally {
+    buildActivity.complete();
+  }
 }
 
 build().catch((err) => {

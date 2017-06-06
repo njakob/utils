@@ -7,8 +7,8 @@ const rollupJSON = require('rollup-plugin-json');
 
 module.exports = async function bundle(packagePath, pkg, dependencies) {
   const packageName = pkg.name.name;
-  const packageSourcesPath = path.resolve(packagePath, 'src');
-  const packageLibraryPath = path.resolve(packagePath, 'lib');
+  const packageSourcesPath = path.join(packagePath, 'src');
+  const packageLibraryPath = path.join(packagePath, 'lib');
 
   const banner = hulk.banner({
     commitHash: hulk.getCommitHash(),

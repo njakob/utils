@@ -1,10 +1,11 @@
 /* @flow */
 
 import fs from 'fs';
+import * as core from './core';
 
-export default function writeFile(filePath: string, buffer: Buffer): Promise<*> {
-  return new Promise((resolve: () => void, reject: (err: ?Error) => void) => {
-    fs.writeFile(filePath, buffer, { encoding: 'utf8' }, (err: ?Error): void => {
+export default function writeFile(filePath: string, buffer: any): Promise<*> {
+  return new Promise((resolve: core.Resolution<void>, reject: core.Rejection) => {
+    fs.writeFile(filePath, buffer, { encoding: 'utf8' }, (err: ?Error) => {
       if (err) {
         reject(err);
         return;

@@ -1,8 +1,12 @@
 [ignore]
+.*/packages/.*/lib
+.*/node_modules/conventional-changelog-core/
 
 [libs]
 
 [include]
-packages/.*/src/.*
+packages/*/src
 
 [options]
+strip_root=true
+unsafe.enable_getters_and_setters=true

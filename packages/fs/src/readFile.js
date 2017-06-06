@@ -1,10 +1,12 @@
 /* @flow */
 
 import fs from 'fs';
+import * as core from './core';
 
-export default function readFile(filePath: string): Promise<Buffer> {
-  return new Promise((resolve: (buffer: Buffer) => void, reject: (err: ?Error) => void) => {
-    fs.readFile(filePath, (err: ?Error, data: Buffer): void => {
+// @TODO: Fix Buffer type
+export default function readFile(filePath: string): Promise<any> {
+  return new Promise((resolve: core.Resolution<any>, reject: core.Rejection) => {
+    fs.readFile(filePath, { encoding: 'utf8' }, (err: ?Error, data: any): void => {
       if (err) {
         reject(err);
         return;

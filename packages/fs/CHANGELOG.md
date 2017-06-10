@@ -26,26 +26,3 @@ See [standard-version](https://github.com/conventional-changelog/standard-versio
 
 <a name="0.0.1"></a>
 ## 0.0.1 (2017-06-05)
-
-
-
-
-<a name="0.0.2"></a>
-## 0.0.2 (2017-06-05)
-
-
-### Features
-
-* **fs:** Add make directory ([86160b8](https://github.com/njakob/utils/tree/master/packages/fs/commit/86160b8))
-* **fs:** Add write file ([bba89ad](https://github.com/njakob/utils/tree/master/packages/fs/commit/bba89ad))
-
-
-
-<a name="0.0.1"></a>
-## 0.0.1 (2017-06-05)
-
-
-
-
-<a name="0.0.1"></a>
-## 0.0.1 (2017-06-05)

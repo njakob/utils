@@ -15,11 +15,21 @@ async function build() {
   const buildActivity = reporter.activity(reporter.parse`Bundle ${packagesPaths.length} package${packagesPaths.length > 0 ? 's' : ''}`);
 
   try {
+    const packages = packagesPaths.reduce((table, packagePath) => {
+      // eslint-disable-next-line no-param-reassign
+      table[packagePath] = readPackage(packagePath);
+      return table;
+    }, {});
+
     await Promise.all(packagesPaths.map(async (packagePath) => {
-      const pkg = readPackage(packagePath);
+      const pkg = packages[packagePath];
       await bundle(packagePath, pkg, getDependencies(pkg));
-      await generateFlowDefinitions(packagePath, pkg);
     }));
+
+    packagesPaths.forEach((packagePath) => {
+      const pkg = packages[packagePath];
+      generateFlowDefinitions(packagePath, pkg);
+    });
   } finally {
     buildActivity.complete();
   }

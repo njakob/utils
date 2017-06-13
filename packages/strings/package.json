@@ -1,0 +1,18 @@
+{
+  "name": "@njakob/strings",
+  "version": "0.0.0",
+  "description": "Strings and text related utils",
+  "author": "Nicolas Jakob <nicow.jakob@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/njakob/utils",
+  "repository": "https://github.com/njakob/utils/tree/master/packages/strings",
+  "bugs": {
+    "url": "https://github.com/njakob/utils/issues"
+  },
+  "main": "lib/strings.js",
+  "module": "lib/strings.es.js",
+  "jsnext:main": "lib/strings.es.js",
+  "dependencies": {
+    "uuid": "^3.0.1"
+  }
+}

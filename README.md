@@ -19,9 +19,11 @@ The Babel repo is managed as a monorepo that is composed of many npm packages.
 
 | Package | Version | Dependencies |
 |--------|-------|------------|
-| [`fs`](https://github.com/njakob/utils/tree/master/packages/fs) | [![NPM version](https://img.shields.io/npm/v/@njakob/fs.svg?maxAge=2592000)](https://www.npmjs.com/package/@njakob/fs) | [![Dependency Status](https://david-dm.org/njakob/utils.svg?path=packages/fs)](https://david-dm.org/njakob/utils?path=packages/fs) |
+| [`fs`](https://github.com/njakob/utils/tree/master/packages/fs) | [![NPM version](https://img.shields.io/npm/v/@njakob/fs.svg)](https://www.npmjs.com/package/@njakob/fs) | [![Dependency Status](https://david-dm.org/njakob/utils.svg?path=packages/fs)](https://david-dm.org/njakob/utils?path=packages/fs) |
+| [`strings`](https://github.com/njakob/utils/tree/master/packages/strings) | [![NPM version](https://img.shields.io/npm/v/@njakob/strings.svg)](https://www.npmjs.com/package/@njakob/strings) | [![Dependency Status](https://david-dm.org/njakob/utils.svg?path=packages/strings)](https://david-dm.org/njakob/utils?path=packages/strings) |
 
 - [`fs`](https://github.com/njakob/utils/tree/master/packages/fs): File system related utils.
+- [`strings`](https://github.com/njakob/utils/tree/master/packages/strings): Strings and text related utils.
 
 ## Licence
 

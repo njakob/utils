@@ -9,7 +9,8 @@
     "lint": "eslint --fix .",
     "flow": "flow check",
     "bootstrap": "lerna bootstrap --npm-client=yarn",
-    "build": "cross-env BABEL_ROLLUP=1 node scripts/build"
+    "test": "npm run lint && npm run flow",
+    "build": "npm run test && cross-env BABEL_ROLLUP=1 node scripts/build"
   },
   "devDependencies": {
     "@njakob/cli-utils": "^1.3.1",

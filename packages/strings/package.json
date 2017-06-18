@@ -1,6 +1,6 @@
 {
   "name": "@njakob/strings",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Strings and text related utils",
   "author": "Nicolas Jakob <nicow.jakob@gmail.com>",
   "license": "MIT",

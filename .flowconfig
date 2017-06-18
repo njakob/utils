@@ -1,6 +1,6 @@
 [ignore]
-.*/packages/.*/lib
-.*/node_modules/conventional-changelog-core/
+<PROJECT_ROOT>/packages/.*/lib
+<PROJECT_ROOT>/node_modules/conventional-changelog-core/
 
 [libs]
 
@@ -8,5 +8,4 @@
 packages/*/src
 
 [options]
-strip_root=true
 unsafe.enable_getters_and_setters=true

@@ -28,7 +28,7 @@
     "eslint-config-njakob": "^4.3.0",
     "eslint-plugin-flowtype": "^2.34.0",
     "eslint-plugin-import": "^2.3.0",
-    "flow-bin": "^0.47.0",
+    "flow-bin": "^0.54.0",
     "lerna": "^2.0.0-rc.5",
     "rimraf": "^2.5.4",
     "rollup": "^0.41.6",

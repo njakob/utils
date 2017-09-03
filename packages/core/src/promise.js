@@ -29,3 +29,10 @@ export class PromiseInspection<T> {
 }
 
 export type PromiseInspections<T> = Array<PromiseInspection<T>>;
+
+export function reflect<T>(promise: Promise<T>): Promise<PromiseInspection<T>> {
+  return promise.then(
+    value => PromiseInspection.fulfill(value),
+    reason => PromiseInspection.reject(reason),
+  );
+}

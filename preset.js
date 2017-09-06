@@ -14,6 +14,7 @@ module.exports = function buildPreset() {
   }
 
   return {
+    comments: false,
     presets: [
       presetStage0,
       [presetES2015.buildPreset, { modules }],

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.1"></a>
+## [0.1.1](https://github.com/njakob/utils/tree/master/packages/core/compare/@njakob/core@0.1.0...@njakob/core@0.1.1) (2017-09-06)
+
+
+### Bug Fixes
+
+* Ignore any other objects while stripping ([c58a587](https://github.com/njakob/utils/tree/master/packages/core/commit/c58a587))
+
+
+
+
 <a name="0.1.0"></a>
 # 0.1.0 (2017-09-03)
 

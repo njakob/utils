@@ -33,8 +33,8 @@ export function stripArray(array: Array<mixed>): Array<mixed> {
 export function strip(value: mixed): mixed {
   if (value === null || value === undefined) {
     return undefined;
-  } else if (typeof value === 'object') {
-    return stripObject(value);
+  } else if (value.constructor === Object) {
+    return stripObject((value: any));
   } else if (Array.isArray(value)) {
     return stripArray(value);
   }

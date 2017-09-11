@@ -7,6 +7,5 @@ module.exports = function findPackages(cwd) {
 
   return filesPaths
     .map(filePath => path.resolve(directoryPath, filePath))
-    .filter(filePath => fs.lstatSync(filePath).isDirectory())
-    ;
+    .filter(filePath => fs.lstatSync(filePath).isDirectory());
 };
